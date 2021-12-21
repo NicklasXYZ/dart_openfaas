@@ -19,7 +19,7 @@ curl -k \
     http://localhost:8000/ \
     echo
 
-# If nothing was changed in the 'test-function/function/lib/src/function_base.dart' file before
+# If nothing was changed in the 'test-function/function' directory before
 # deployment then we should just see the default response:
 >> Hello from Gleam & OpenFaaS!
 
@@ -30,7 +30,7 @@ curl -k \
     -X POST http://localhost:8000/ \
     echo
 
-# If nothing was changed in the 'test-function/function/src/function.gleam' file before
+# If nothing was changed in the 'test-function/function' directory before
 # deployment then we should just see the default response:
 >> [{"string_field":"Peter"}, {"int_field":42}, {"double_field":180.5}]
 ```

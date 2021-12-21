@@ -4,7 +4,8 @@
   <img src="preview/logo.png" />
 </p>
 
-This repository contains [OpenFaaS](https://github.com/openfaas) function templates for writing serverless functions in the [Dart](https://github.com/gleam-lang/gleam) programming language.
+
+This repository contains [OpenFaaS](https://github.com/openfaas) function templates for writing serverless functions in the [Dart](https://dart.dev/) programming language.
 
 
 ## Usage
@@ -28,8 +29,8 @@ Note: This essentially creates a usual Dart project stucture, but with a pre-def
 4. Add new functionality to the function that is going to be deployed and managed by OpenFaaS:
 
 ``` bash
-code test-function/function/src/function.gleam
-# ... Extend or add whatever you want to the file
+code template/function/lib/src/function_base.dart
+# ... Inside this file extend or add whatever you want to inside the 'Service' class  
 ```
 
 5. Make sure a valid container registry, to where functions can be pushed, has been defined in the `test-function.yml` file:
@@ -68,7 +69,7 @@ curl -k \
 
 # If nothing was changed in the 'test-function/function' directory before
 # deployment then we should just see the default response:
->> Hello from Gleam & OpenFaaS!
+>> Hello from Dart & Openfaas!
 
 ### Example POST request:
 curl -k \
