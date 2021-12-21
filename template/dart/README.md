@@ -21,7 +21,7 @@ curl -k \
 
 # If nothing was changed in the 'test-function/function' directory before
 # deployment then we should just see the default response:
->> Hello from Gleam & OpenFaaS!
+>> Hello from Dart & Openfaas!
 
 ### Example POST request:
     curl -k \
